@@ -3,6 +3,9 @@ import random
 
 app = Flask(__name__)
 
+if __name__ == "__main__":
+    app.run()
+
 @app.route("/", methods=["GET", "POST"])
 def rps():
     if request.method == "POST":
